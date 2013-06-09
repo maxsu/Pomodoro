@@ -1,0 +1,16 @@
+#!/usr/bin/ruby
+require 'time'
+
+animals = ['ostrich', 'penguin', 'cheetah', 'african swallow', 'my little pony', 'lion', 'vampire bat']
+
+
+# Natural time, eg. "02:33 pm, on Wednesday, June 5"
+timestring = Time.now.strftime('%I:%M %P, on %A, %B %e')
+
+while true do
+`spd-say 'Starting a pomo doro timer. Please, sir, focus on the chosen task with all the concentration of the #{animals.sample}.'`
+`sleep  25m`
+`spd-say 'Congratulations on completing the task. May you win the success of the #{animals.shuffle} and lolcat. I would submit that you have earned a 5 minute break!'`
+`sleep 5m`
+end
+
